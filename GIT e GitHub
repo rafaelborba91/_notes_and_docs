@@ -1,6 +1,6 @@
-#CTRL+V no GIT é SHIFT+INSERT
+CTRL+V no GIT é SHIFT+INSERT
 
-##Explicando os comandos
+- Explicando os comandos
 
 1 - Primeiro ao começar a trabalhar na local, faz um pull para puxar as alterações q eu talvez tenha feito fora de casa. $ git pull -r origin master
 
@@ -10,7 +10,7 @@
 
 4 - Depois de comitar localmente, é preciso fazer o PUSH para atualizar os arquivos lá no HUB e assim manter o 'backup do seu sistema' $ git push origin master
 
-#COMANDOS
+..:: COMANDOS ::..
 
 0 - $ git status
 1 - $ git pull -r origin master

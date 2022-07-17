@@ -2,11 +2,16 @@
 
 * Instalar o XAMPP (Usando versão 8.1.6)
 * Instalar o COMPOSER (Usando versão 2.3.9)
-* Instalar o Laravel
+* Instalar o Laravel 9.2
 
 
 2 - Lista de comandos q fui fazendo:
 
 Acessar a pasta que criei localmente para salvar o projeto pelo terminal, usar o comando abaixo:
-composer create-project --prefer-dist laravel/larevel crudKB
+composer create-project --prefer-dist laravel/laravel crudKB
+
+Acessar a pasta da aplicação, e para startar o servidor
+php artisan serve
+
+
 

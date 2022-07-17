@@ -1,9 +1,16 @@
-1 - Primeiro ao começar a trabalhar na local, faz um pull para puxar as alterações q eu talvez tenha feito fora de casa.
+1 - Primeiro ao começar a trabalhar na local, faz um pull para puxar as alterações q eu talvez tenha feito fora de casa. $ git pull -r origin master
 
-2 - Comando para subir para a HEAD as mudanças nos arquivos locais é: 
+2 - Comando para subir para a HEAD as mudanças nos arquivos locais é: $ git add .
 
-'teste'
+3 - Comando para criar o commit das mudanças: $ git commit -m "XXXX Colocar aqui o texto da descrição do commit XXXX"
 
-'''teste2'''
-```
-``` teste```
+4 - Depois de comitar localmente, é preciso fazer o PUSH para atualizar os arquivos lá no HUB e assim manter o 'backup do seu sistema' $ git push origin master
+
+
+
+1 - $ git pull -r origin master
+2 - $ git add .
+3 - $ git commit -m "XXXX Colocar aqui o texto da descrição do commit XXXX"
+4 - $ git push origin master
+
+-----------------

@@ -15,3 +15,18 @@ php artisan serve
 
 
 
+---------------------------------------------------------------------------------------------------
+BLADES e os layouts
+ 
+ 
+ Ao criar novas pages, usa essa estrutura pra fazer só o content.
+ 
+ @extends('layouts.main')         ,<-- Aqui aponta para o layout q vc vai usar
+
+@section('title', 'ADesk - Busquem conhecimento!')      <-- Aqui é o title do html
+
+@section('content')  
+
+<p> CONTEUDO AQUI </p>
+
+@endsection   <--tem q add isso no final

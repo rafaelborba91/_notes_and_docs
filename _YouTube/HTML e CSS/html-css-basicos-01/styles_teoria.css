@@ -1,0 +1,254 @@
+body {
+    padding: 20px;
+    padding-bottom: 500px;
+    margin-top: 50px;
+}
+
+p {
+    color: blue;
+    font-size: 30px;
+}
+
+/* Classes e IDs */
+
+/* Uma coisa importante q vc precisa saber sempre é a hierarquia da
+obediencia do CSS, ID vai sobrepor todos, depois CLASS, e depois os
+internals ou inlines css*/
+
+/* estilizando a CLASSE */
+
+.meu-paragrafo {
+    background-color: black;
+    color: red;
+}
+
+/* estilizando a ID */
+
+#titulo-principal {
+    background-color: aqua;
+    color: blueviolet;
+    padding: 10px;
+    font-family: helvetica;
+}
+
+/* Seletores para TODOS ELEMENTOS e LISTAS */
+
+/*Todos os elementos (pega tudo, menos os css de ID)*/
+
+* {
+    font-family: Calibri;
+}
+
+/*Na lista*/
+
+p,
+h1,
+h2 {
+    border-bottom: 1px solid red;
+}
+
+/* CORES */
+
+.nome-da-cor {
+    color: pink
+}
+
+.hexadecimal {
+    color: #9edef7;
+    background-color: #666666;
+}
+
+.rgb {
+    color: rgb(29, 236, 10)
+}
+
+/* Fontes */
+
+.serifada {
+    font-family: Georgia;
+}
+
+.sem-serifa {
+    font-family: Helvetica;
+}
+
+.mono-espacada {
+    font-family: 'Courier New';
+    /*Nome de fonte q tem espaço tem q colocar entre aspas simples */
+}
+
+/* Size e Weight */
+
+.tamanho-fonte-grande {
+    font-size: 64px;
+}
+
+.tamanho-fonte-pequena {
+    font-size: 12px;
+}
+
+.peso-fonte {
+    font-weight: 900;
+}
+
+.texto-italico {
+    font-style: italic;
+}
+
+/* Box Model */
+
+.box-model {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #110eaf;
+    padding: 20px;
+    /* PADDING é o espaçamento DENTRO do elemento */
+    margin: 10px;
+    /* MARGIN é espaçamento FORA do elemento */
+}
+
+/* Propriedades do Texto */
+
+.alinhamento {
+    text-align: center;
+}
+
+.transforma-maiscula {
+    text-transform: uppercase;
+}
+
+.transforma-minusculo {
+    text-transform: lowercase;
+}
+
+/* Espaçamento de Linhas e Letras */
+
+.espacamento-texto {
+    width: 150px;
+    /* Aqui determina largura max, pra criar a quebra de linha */
+    line-height: 40px;
+    /* Aqui o tamanho da linha, aumenta o espaçamento entre as LINHAS */
+    letter-spacing: 8px;
+    /* Espaçamento entre letras */
+}
+
+/* Links */
+
+.decoration {
+    text-decoration: none;
+    /* Isso aqui tira aquele sublinhado do link */
+
+}
+
+.visitado:visited {
+    /* Isso aqui do :visited muda a cor dos links q já foram visitados no browser */
+    color: #666666;
+}
+
+.estilo-hover:hover {
+    /* Isso aqui do :hover é pra mudar o aspecto do link qnd passa o mouse em cima */
+    background-color: #1292ae;
+}
+
+/* Link em Button */
+
+.btn {
+    background-color: #34ae43;
+    border: 3px solid #110eaf;
+    border-radius: 5px;
+    /*Arrendonda o elemento*/
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    /*Pega a linha toda para o elemento*/
+    width: 250px;
+    padding: 12px 7px;
+    text-align: center;
+    margin: 20px;
+    transition: 1s;
+    font-family: cambria;
+    font-size: 30px;
+
+}
+
+/* Pulo do gato, pra adicionar no mesmo botao um efeito de hover, tem q abrir outra chave aqui no css */
+
+.btn:hover {
+    background-color: #110eaf;
+    /*qnd passar o mouse em cima vai deixar estiloso igual a borda */
+}
+
+/* Listas */
+
+.sem-estilo {
+    list-style: none;
+}
+
+/* Display - esse atributo é q controla se o elemento vai ocupar a tela toda (block) ou se vai ser inline (um na frente do outro na mesma linha) */
+
+.inline {
+    width: 50px;
+    height: 50px;
+    background-color: #34ae43;
+    margin: 5px;
+    display: inline-block;
+}
+
+.bloco {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Position Fixed */
+
+.elemento-fixo {
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 15px;
+    text-align: center ;
+    background-color: aqua;
+    border-bottom: 2px solid #666666;
+    color: #110eaf;
+    font-size: 40px;
+}
+
+/* First Child - Pseudo Seletor */
+
+.primeiro-elemento p:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Pseudo Elemento */
+
+.primeira-letra::first-letter {
+    font-size: 50px;
+    color: #666666;
+    background-color: #f50404;
+
+}
+
+/* Especifidade */
+
+h4 {
+    color: red;
+}
+
+.titulo {
+    color: green;
+}
+
+#meu-titulo-preferido {         /* Usa # pra chamar a ID*/
+    color:#110eaf;
+}
+
+/* IMPORTANT */
+
+h4 {
+    color: purple !important;  /* Olha ai a sintaxe, ele faz passar por cima de tudo que foi feito antes, ele é puta soberado, ruim pq é coisa de preguiçoso*/
+}

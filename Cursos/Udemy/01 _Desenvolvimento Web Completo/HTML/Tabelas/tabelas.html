@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+    <body>
+        
+        <h2>Produtos</h2>
+
+        <hr>
+
+        <table border="1px" width="75%">
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td>2.999,90</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Tablet</td>
+                <td>999,90</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Desconto</td>          <!-- Atributo que mescla entre linhas -->
+                <td colspan="2">Cupon1 - R$ 10,00</td> <!-- Atributo para uma linha ocupar mais colunas -->           
+            </tr>
+            <tr>
+                <td colspan="3">Cupon2 - R$ 20,00</td> 
+            </tr>
+            <tr>
+                <td> Total:</td>
+                <td colspan="2">3.969,8</td>
+            </tr>
+
+
+       
+        </table>
+
+        <hr>
+
+        <h2>Clientes</h2>
+
+        <table border="1px" width="70%">
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>CNPJ/CPF</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Rafael</td>
+                <td>Fisíca</td>
+                <td>03269788100</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>
+                    Supermercado Pratiko <img src="data:image/png;base64,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" alt="imagem_supermercado" width="20px">
+                </td>
+                <td>Jurídica</td>
+                <td>123456789000136</td>
+            </tr>
+           
+
+
+
+    </body>
+</html>

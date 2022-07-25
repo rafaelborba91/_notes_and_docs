@@ -42,3 +42,9 @@ footer {
     width: 880px;
     text-align: center;
 }
+
+.imagem_pub {
+    border: 10px solid #b9b989;
+    margin-left: 10px;
+    
+}

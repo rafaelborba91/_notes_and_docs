@@ -1,0 +1,32 @@
+.conteudo {
+    border: 1px solid red;
+    /*
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    */
+
+    /*
+    padding: 20px 15px 10px 5px; /* dá pra adicionar até 4 valores no padding, isso faz com que cada valor seja atribuido a left, rigth, top ou botton
+    */
+
+    padding: 20px; /*Ao declarar somente 1x vai aplicar nas 4 dimensões*/
+
+    margin: 20px; /* A memsa dinâmica explicada acima se aplica as margens*/
+
+    width: 150px;
+
+}
+
+#noticia {
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid #888;
+
+}
+
+h2 {
+    margin: 0px;
+}
+

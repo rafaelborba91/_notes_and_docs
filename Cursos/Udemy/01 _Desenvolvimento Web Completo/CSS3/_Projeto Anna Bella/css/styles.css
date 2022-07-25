@@ -1,0 +1,44 @@
+
+* {
+    font-family: helvetica;
+  
+
+}
+
+li {
+    display: inline;
+    margin: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: #b9b989;
+    padding: 10px;
+    width: 880px;
+}
+
+a {
+    text-decoration: none;
+    color: #585857
+}
+
+h2 {
+    color:#7c7c5d
+}
+
+body {
+    background-image: url(/images/fundo.png);
+}
+
+.about_me {
+    background-color: #e9ebd6;
+    padding: 10px;
+    width: 880px;
+}
+
+footer {
+    font-weight: bold;
+    width: 880px;
+    text-align: center;
+}

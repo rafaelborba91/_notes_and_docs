@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos</title>
+    
+    <style type="text/css">
+
+        body {
+            background: #8e8e8e;
+        }
+
+        .container {
+            background: #fff;
+            width: 800px;
+            margin: 10px auto; /* Ao comentar AUTO no segundo atributo, o sistema irá deixar a margem automatica dos lados esquerdo e direito, ideal para deixar centralidado*/
+            padding: 10px;
+            position: relative; /*Posição de referencia*/
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: -20px;
+            left: 0px;
+
+            /*são 4  propriedades de deslocamento/position:
+            - top - right - bottom - left */
+
+            /* Para usar essas posições, o container 
+            pai (pode ser até o body) precisa ter uma 
+            posição, para servir de referencia para os 
+            outros elementos q vão usar positions*/
+        }
+
+        .absolute {   
+            border: 1px solid #555;
+            background: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+            
+            /*Usando esse os elementos da page ignoram ele*/
+        }
+
+        .fixed {    
+            border: 1px solid #b91616;
+            background: #5b5b5b;
+            position: fixed;
+            top: 200px;
+            right: 200px;
+
+            /*Usando esse os elementos da page 
+            ignoram ele, e esse fixed se move junto 
+            com o scroll, como o proprio nome diz, ele
+            fica fixo na tela.*/
+        }
+        
+
+        p {
+            width: 300px;
+        }
+
+           
+    </style>
+
+</head>
+    <body>
+
+        <div class="container">
+            <h1 class="static"> Posicionamento Estático </h1>
+            <p class="static">P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="absolute">P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="fixed">P4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P11 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P13 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+            <p class="static">P14 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?</p>
+
+
+        </div>
+
+
+    </body>
+</html>

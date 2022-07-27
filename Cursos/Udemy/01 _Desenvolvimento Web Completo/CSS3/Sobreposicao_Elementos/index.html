@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição de Elementos</title>
+    
+    <style type="text/css">
+
+       .conteudo1 {
+            border: 1px solid red;
+            background-color: grey;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 10;
+       }
+
+       /*A propriedade Z-INDEX serve pra definir
+       a prioridade do elemento. Quanto MAIOR o
+       numero do zindex, maior será a prioridade
+       dele em relação aos outros elentos da page*/
+
+       .conteudo2 {
+            border: 1px solid red;
+            background-color: wheat;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top:80px;
+            left: 80px;
+            z-index: 5;
+            
+       }
+
+       .conteudo3 {
+            border: 1px solid red;
+            background-color: rgb(137, 214, 106);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 180px;
+            left: 180px;
+            z-index: 1;
+            
+       }
+           
+    </style>
+
+</head>
+    <body>
+
+        <div class="conteudo1">
+            Conteúdo 1
+        </div>
+
+        <div class="conteudo2">
+            Conteúdo 2
+        </div>
+
+        <div class="conteudo3">
+            Conteúdo 3
+        </div>
+
+    </body>
+</html>

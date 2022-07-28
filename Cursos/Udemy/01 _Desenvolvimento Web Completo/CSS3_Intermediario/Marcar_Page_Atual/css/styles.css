@@ -1,0 +1,55 @@
+* {
+    font-family: Helvetica;
+    font-weight: bold;       /* FONT WEIGHT = BOLD pra deixar NEGRITO!*/
+}
+
+
+#ul_pratica {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+ }
+ 
+ ul a {         /*para selecionar todos os links dentro da UL*/
+    width: 200px;
+    height: 40px;
+    display: block;          /*Coloquei isso aqui pq os links são INLINE*/
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;       /*Usa essa propriedade pra mover o texto um pouco para direita*/
+    line-height: 40px;     /* Essa propriedade define o tamanho da linha de um texto, ou seja, podemos deixar o tamanho da linha igual ao tamanho da LI, resultado é q vai ficar centralizado */
+    background: #e0cc11 url(../images/menu.png) no-repeat left bottom;  /*Adicionei a cor ali só para caso a imagem dê algum pau, o fundo n ficar branco e bugar o usuário */
+ }
+
+ a:hover {
+    background-position: right bottom;  /*Na prática, essa propiedade move a imagem para esquerda ao passar o mouse, fazendo assim a 'mágica' da mudança de cor*/
+    color: #fff;
+    transition: 0.1s;
+ }
+
+/*Começa aqui a explicação*/
+
+ #home .home {
+   background-position: right bottom;  
+   color: #fff;
+ }
+
+ #home .sobre {
+   background-position: right bottom;  
+   color: #fff;
+ }
+
+ #home .servicos {
+   background-position: right bottom;  
+   color: #fff;
+ }
+
+ #home .noticias {
+   background-position: right bottom;  
+   color: #fff;
+ }
+
+ #home .contato {
+   background-position: right bottom;  
+   color: #fff;
+ }

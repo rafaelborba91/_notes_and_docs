@@ -46,6 +46,15 @@ a {
     text-decoration: none;
 }
 
+a:link , a:visited { 
+    color: #fb7600;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
 /* Usando Seletor, desse jeito só irá afetar os links 
 dentros da DIV que usa #area_cabecalho */
 
@@ -59,6 +68,7 @@ dentros da DIV que usa #area_cabecalho */
     color:#f7b600;
     background: #ffffff;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 /* Conteúdo */
@@ -78,13 +88,6 @@ dentros da DIV que usa #area_cabecalho */
     width: 240px;
     float: right;
 }
-
-/* Apagar depois */
-#area_postagens,#area_lateral {
-    background: orange;
-}
-
-/*-----*/
 
 #rodape {
     clear: both;            /*para ignorar os floats do content*/
@@ -111,4 +114,9 @@ dentros da DIV que usa #area_cabecalho */
 }
 
 
-/* 08:13 - Continuar daqui
+/* Lateral */
+
+.conteudo_lateral {
+    background: #ffffff;
+    
+}

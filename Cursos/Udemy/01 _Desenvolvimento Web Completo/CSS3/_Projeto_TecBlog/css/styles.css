@@ -118,5 +118,27 @@ dentros da DIV que usa #area_cabecalho */
 
 .conteudo_lateral {
     background: #ffffff;
-    
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
+#area_lateral h3 {
+    color: #565656 ;
+    background: #cccccc;
+    padding: 5px;    
+}
+
+.postagem_lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #f4f4f4;
+}
+
+#categorias {
+    list-style: none;
+}
+
+#categorias>li {
+    margin-top: 5px;
+}
+

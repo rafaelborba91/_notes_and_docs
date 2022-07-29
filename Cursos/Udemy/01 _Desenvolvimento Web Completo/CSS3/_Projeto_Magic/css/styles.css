@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+    font-size: 1em;
+}
+
+#top_site {
+    height: 230px;
+    background-color:#0E1F40;
+}
+
+#logo {
+    text-align: center;       /*SIM, o text-align centraliza imagens =P */
+    padding: 10px;
+}
+
+#navbar {
+    height: 60px;
+    width: 920px;
+    background-image: url(../images/navbar_background.jpg);
+    margin: 0 auto;
+}
+
+#ul_navbar {
+    list-style-type: none;        /* Tira os dots da lista*/
+    text-align: center;
+    height: 58px ;
+    width: 920px;
+    border: 1px solid red;
+  
+}
+
+#li_navbar {
+    border: 1px solid blue;
+    display: inline;            /* Faz as LI ficarem em LINHA*/
+    line-height: 60px;          /* Faz os LINKS (A) ficarem centralizados */
+    
+}
+
+#li_navbar a {
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 23px;
+  
+}
+
